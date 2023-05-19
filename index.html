@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8" />
+    <link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/ol@v7.3.0/ol.css" />
+    <link rel = "stylesheet" href = "style.css" />
+    <script src = "https://cdn.jsdelivr.net/npm/ol@v7.3.0/dist/ol.js"></script>
+    <title>Birds-APP di Pietro Moscheni</title>
+</head>
+
+<body>
+    <h1>Sito per la ricerca e la mappatura di volatili e uccelli</h1>
+    <h2>Scegliere un punto sulla mappa e selezionare uno dei volatili presenti nel menù a tendina</h2>
+    <div class = "grid-container">
+        <div class = "grid-1">
+            <div class = "sidebar">
+                <div class="select">
+                    <select id = "birdComboBox">
+                        <option value=0>Nessun volatile trovato</option>
+                    </select>
+                </div>
+                <hr />
+                <div id = "content"></div>
+            </div>
+        </div>
+        <div class = "grid-2">
+            <div id = "map" class = "map"></div>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
